@@ -17,12 +17,16 @@
   </style>
 </head>
 <body>
-  <slot-machine-widget 
-    theme="dark" 
-    credits="100"
-    bets="5,10,25,50">
-  </slot-machine-widget>
-  
-  <script src="slot-machine-widget.js"></script>
+  <div id="slot-host"></div>
+
+  <script
+    src="slot-machine-widget.js"
+    data-credits="200"
+    data-storage="local"
+    data-storage-key="slot-v1"
+    data-target="#slot-host"
+    data-theme="dark"
+    data-bets="5,10,25,50">
+  </script>
 </body>
 </html>
