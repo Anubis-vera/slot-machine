@@ -19,7 +19,7 @@
     credits: 100,
     storage: 'local', // 'local' or 'session'
     storageKey: null, // default computed from hostname
-    theme: 'light',   // 'light' or 'dark'
+    theme: 'dark',   // 'light' or 'dark'
     bets: [1, 2, 5, 10],
   };
 
@@ -486,4 +486,5 @@
     // Expose a global for optional imperative control
     window.SlotMachineWidget = window.SlotMachineWidget || { mount: mountWidget };
   }
+
 })();
