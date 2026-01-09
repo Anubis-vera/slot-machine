@@ -1,1 +1,28 @@
-Moxxi Slot Machine body { margin: 0; padding: 0; background: transparent; display: flex; justify-content: center; align-items: center; min-height: 100vh; } 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moxxi Slot Machine</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+  </style>
+</head>
+<body>
+  <slot-machine-widget 
+    theme="dark" 
+    credits="100"
+    bets="5,10,25,50">
+  </slot-machine-widget>
+  
+  <script src="slot-machine-widget.js"></script>
+</body>
+</html>
